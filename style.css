@@ -29,8 +29,10 @@ nav{
 
 }
 .logo img{
-    height: 50px;
-    width: 50px;
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
     
 }
 
@@ -85,3 +87,4 @@ nav{
     }
     
 }
+
