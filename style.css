@@ -33,6 +33,7 @@ nav{
     height: 60px;
     object-fit: cover;
     cursor: pointer;
+    color: azure;
     
 }
 
@@ -55,6 +56,12 @@ nav{
 .nav-links a:hover{
     color: rgb(8, 105, 241);
 }
+
+.nav-links .active{
+    color: rgb(8, 105, 241);
+}
+
+
 
 .burger{
     display: none;
@@ -88,3 +95,133 @@ nav{
     
 }
 
+
+#accueil {
+    min-height: 100vh;
+    background:rgb(0, 13, 32);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 100px 40px 40px 40px;  
+}
+
+.accueil-contenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 40px;
+}
+
+
+.accueil-bonjour {
+    color: #58a6ff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.accueil-nom {
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+.M{
+    color: #58a6ff;
+}
+
+.accueil-titre {
+    color: #58a6ff;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.accueil-description {
+    color: #8b949e;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    max-width: 500px;
+}
+
+.accueil-boutons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-principal {
+    background-color: #59a6ff;
+    color: #0d1117;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #388bfd;
+}
+.btn-secondaire {
+    border: 2px solid #58a6ff;
+    color: #58a6ff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.btn-secondaire:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+
+.accueil-photo img {
+    width: 320px;
+    height: 340px;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: #58a6ff;
+    
+    
+}
+
+@media (max-width: 768px) {
+    .accueil-contenu {
+        flex-direction: column; 
+        align-items: center;
+        
+    }
+
+    .accueil-nom{
+        font-size: 38px;
+    }
+
+    .accueil-titre{
+        font-size: 18px;
+    }
+    .accueil-description{
+        font-size: 14px;
+    }
+    .accueil-photo img{
+        width: 220px;
+        height: 220px;
+    }
+    .accueil-boutons{
+        justify-content: center;
+
+    }
+
+
+
+}
